@@ -24,3 +24,14 @@ body {
   color: var(--foreground);
   font-family: Arial, Helvetica, sans-serif;
 }
+
+html, body {
+  overflow-x: hidden;           /* still allow overflow */
+  scrollbar-width: none;      /* hide in Firefox */
+  -ms-overflow-style: none;   /* hide in IE10+ */
+}
+
+html::-webkit-scrollbar,
+body::-webkit-scrollbar {
+  height: 0;                  /* hide in WebKit */
+}
