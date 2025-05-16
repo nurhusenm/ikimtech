@@ -56,7 +56,8 @@ const services = [
 
 const Service = () => {
   return (
-    <section className="pt-64 pb-16 bg-gradient-to-br from-white via-[#f8fafc] to-[#eef2f6] relative " id="services">
+    <section className="
+    sm:pt-64 pt-32 pb-16 bg-gradient-to-br from-white via-[#f8fafc] to-[#eef2f6] relative " id="services">
       <div className="absolute inset-0 bg-[linear-gradient(180deg,transparent_0%,rgba(3,61,84,0.05)_100%)]"></div>
       <div className="container mx-auto px-4 relative z-10">
         <div className="text-center mb-16">

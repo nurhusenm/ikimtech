@@ -134,7 +134,8 @@ const Hero = () => {
         </Swiper>
 
         {/* Image Container – now sits above all sections on any screen */}
-        <div className="absolute left-1/2 bottom-0 transform -translate-x-1/2 translate-y-1/2 z-30 pb-4">
+        <div 
+        className="absolute left-1/2 bottom-0 transform -translate-x-1/2 translate-y-0  sm:translate-y-1/2 z-30 pb-4 pt-4">
           <motion.div
             initial={{ opacity: 0, y: 100 }}
             animate={{ opacity: 1, y: 0 }}

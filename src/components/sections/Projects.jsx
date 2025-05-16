@@ -164,7 +164,7 @@ const Projects = () => {
         {/* Projects Slider */}
         <div className="relative h-[600px] overflow-hidden">
           {/* Previous Project (Half-visible) */}
-          <div className="absolute left-0 top-1/2 -translate-y-1/2 w-1/4 h-[400px] opacity-50">
+          <div className="absolute left-0 top-1/2 -translate-y-1/2 sm:w-1/4 w-1/6 h-[400px] opacity-50">
             <img
               src={projects[getAdjacentProjects().prev].image}
               alt={projects[getAdjacentProjects().prev].title}
@@ -198,7 +198,7 @@ const Projects = () => {
                   paginate(-1);
                 }
               }}
-              className="absolute left-1/4 w-1/2 h-full"
+              className="absolute left-1/6 sm:left-1/4 w-4/6 sm:w-1/2 h-full"
             >
               <div className="w-full h-full px-4">
                 <div className="bg-white rounded-3xl p-6 shadow-xl h-full">
@@ -221,7 +221,7 @@ const Projects = () => {
           </AnimatePresence>
 
           {/* Next Project (Half-visible) */}
-          <div className="absolute right-0 top-1/2 -translate-y-1/2 w-1/4 h-[400px] opacity-50">
+          <div className="absolute right-0 top-1/2 -translate-y-1/2 w-1/6 sm:w-1/4 h-[400px] opacity-50">
             <img
               src={projects[getAdjacentProjects().next].image}
               alt={projects[getAdjacentProjects().next].title}
