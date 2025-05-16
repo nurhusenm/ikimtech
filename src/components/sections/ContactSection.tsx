@@ -94,6 +94,8 @@ const ContactSection = () => {
             <motion.div
               initial={{ opacity: 0, x: -20 }}
               whileInView={{ opacity: 1, x: 0 }}
+            viewport={{once: true}}
+
               transition={{ duration: 0.6 }}
               className="bg-white rounded-2xl shadow-xl p-8"
             >
@@ -179,6 +181,8 @@ const ContactSection = () => {
                   whileHover={{ scale: 1.05 }}
                   type="submit"
                   disabled={isLoading}
+            viewport={{once: true}}
+
                   className="relative w-full px-6 py-3 overflow-hidden rounded-full group cursor-pointer"
                 >
                   <div className="absolute inset-0 bg-gradient-to-r from-[#033d54] via-[#0a4f6b] to-[#033d54] border-2 border-cyan-500/30" />
@@ -195,6 +199,8 @@ const ContactSection = () => {
             {/* Right Column - Content and Illustration */}
             <motion.div
               initial={{ opacity: 0, x: 20 }}
+            viewport={{once: true}}
+
               whileInView={{ opacity: 1, x: 0 }}
               transition={{ duration: 0.6 }}
               className="space-y-8"
@@ -207,6 +213,8 @@ const ContactSection = () => {
                   {contactPoints.map((point, index) => (
                     <motion.div
                       key={point.title}
+            viewport={{once: true}}
+
                       initial={{ opacity: 0, y: 20 }}
                       whileInView={{ opacity: 1, y: 0 }}
                       transition={{ delay: index * 0.2 }}

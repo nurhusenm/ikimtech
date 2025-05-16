@@ -75,6 +75,8 @@ const Service = () => {
               key={index}
               initial={{ opacity: 0, y: 20 }}
               whileInView={{ opacity: 1, y: 0 }}
+            viewport={{once: true}}
+
               transition={{ duration: 0.5, delay: index * 0.1 }}
               className="group p-6 bg-white/80 backdrop-blur-sm rounded-xl shadow-sm hover:shadow-md transition-all duration-300 
                          border-2 border-transparent hover:border-[#033D54] cursor-pointer"

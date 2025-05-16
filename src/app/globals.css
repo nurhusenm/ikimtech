@@ -26,6 +26,7 @@ body {
 }
 
 html, body {
+  background-color: #033d54;
   overflow-x: hidden;           /* still allow overflow */
   scrollbar-width: none;      /* hide in Firefox */
   -ms-overflow-style: none;   /* hide in IE10+ */
@@ -35,10 +36,13 @@ html::-webkit-scrollbar,
 body::-webkit-scrollbar {
   height: 0;                  /* hide in WebKit */
 }
+/* globals.css (near top) */
+nav {
+  background-color: #033d54;  /* matches your Navbar’s bg */
+}
 
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+
+
 
 @keyframes shimmer {
   0% {

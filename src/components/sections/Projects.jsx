@@ -178,6 +178,8 @@ const Projects = () => {
               key={currentIndex}
               custom={direction}
               variants={slideVariants}
+            viewport={{once: true}}
+
               initial="enter"
               animate="center"
               exit="exit"

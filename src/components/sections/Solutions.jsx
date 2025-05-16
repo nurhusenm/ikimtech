@@ -1,6 +1,7 @@
 'use client';
 
 import { motion } from "framer-motion";
+import Link from "next/link";
 import { FaArrowRight } from 'react-icons/fa';
 
 const solutions = [
@@ -40,6 +41,8 @@ const Solutions = () => {
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6 }}
+            viewport={{once: true}}
+
             className="text-sm font-medium text-[#033D54] mb-2 bg-blue-50 inline-block px-4 py-1 rounded-full"
           >
             Solutions
@@ -48,6 +51,8 @@ const Solutions = () => {
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6, delay: 0.1 }}
+            viewport={{once: true}}
+
             className="text-3xl md:text-4xl font-bold text-gray-900"
           >
             Transforming Challenges into Opportunities
@@ -61,6 +66,8 @@ const Solutions = () => {
               initial={{ opacity: 0, x: index % 2 === 0 ? -50 : 50 }}
               whileInView={{ opacity: 1, x: 0 }}
               transition={{ duration: 0.6 }}
+            viewport={{once: true}}
+
               className={`flex flex-col ${index % 2 === 0 ? 'md:flex-row' : 'md:flex-row-reverse'} 
                          gap-8 items-center bg-white rounded-2xl p-8 shadow-sm hover:shadow-md 
                          transition-all duration-300 group`}
@@ -70,6 +77,8 @@ const Solutions = () => {
                 <motion.img
                   whileHover={{ scale: 1.05 }}
                   transition={{ duration: 0.3 }}
+            viewport={{once: true}}
+
                   src={solution.image}
                   alt={solution.question}
                   className="w-full h-[300px] object-cover"
@@ -85,14 +94,14 @@ const Solutions = () => {
                   {solution.description}
                 </p>
                 <div className="flex gap-4">
-                  <button className="flex items-center gap-2 px-6 py-3 bg-[#033D54] text-white rounded-lg 
+                  <Link href={"https://t.me/ikimtechco"} className="cursor-pointer flex items-center gap-2 px-6 py-3 bg-[#033D54] text-white rounded-lg 
                                    hover:bg-[#033D54]/90 transition-colors duration-300">
                     Learn more <FaArrowRight />
-                  </button>
-                  <button className="px-6 py-3 border-2 border-[#033D54] text-[#033D54] rounded-lg 
+                  </Link>
+                  <Link href={"#contact"} className="px-6 py-3 border-2 border-[#033D54] text-[#033D54] rounded-lg 
                                    hover:bg-[#033D54] hover:text-white transition-colors duration-300">
                     Contact Us
-                  </button>
+                  </Link>
                 </div>
               </div>
             </motion.div>

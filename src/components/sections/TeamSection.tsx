@@ -108,7 +108,7 @@ const TeamSection = () => {
             variants={fadeIn('up', 'tween', 0.2, 1)}
             initial="hidden"
             whileInView="show"
-            viewport={{ once: false, amount: 0.25 }}
+            viewport={{ once: true, amount: 0.25 }}
             className="text-center"
           >
             <h2 className="text-4xl font-bold mb-6" style={{ color: '#033d54' }}>

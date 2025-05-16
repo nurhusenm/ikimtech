@@ -48,6 +48,7 @@ const WhyChooseUs = () => {
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6 }}
+            viewport={{once: true}}
             className="text-sm font-medium text-[#033D54] mb-2 bg-blue-50 inline-block px-4 py-1 rounded-full"
           >
             Why Choose Us
@@ -56,6 +57,7 @@ const WhyChooseUs = () => {
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6, delay: 0.1 }}
+            viewport={{once: true}}
             className="text-3xl md:text-4xl font-bold text-gray-900"
           >
             Excellence in Every Detail
@@ -69,6 +71,8 @@ const WhyChooseUs = () => {
               initial={{ opacity: 0, y: 20 }}
               whileInView={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.5, delay: index * 0.1 }}
+            viewport={{once: true}}
+
               className="group p-6 bg-white rounded-xl shadow-sm hover:shadow-md transition-all duration-300 
                          border-2 border-transparent hover:border-[#033D54] text-center"
             >
