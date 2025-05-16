@@ -33,7 +33,7 @@ const solutions = [
 
 const Solutions = () => {
   return (
-    <section className="py-20 bg-gradient-to-br from-[#033D54]/5 via-white to-[#033D54]/5 relative">
+    <section className="py-20 bg-gradient-to-br from-[#033D54]/5 via-white to-[#033D54]/5 relative" id="solutions">
       <div className="container mx-auto px-4">
         <div className="text-center mb-16">
           <motion.p 

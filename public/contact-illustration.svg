@@ -1,0 +1,25 @@
+<svg width="800" height="600" viewBox="0 0 800 600" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <!-- Background Elements -->
+  <circle cx="400" cy="300" r="250" fill="#f0f9ff" />
+  <circle cx="400" cy="300" r="200" fill="#e0f2fe" />
+  
+  <!-- Envelope Base -->
+  <path d="M250 200 L550 200 L550 400 L250 400 Z" fill="#033d54" />
+  
+  <!-- Envelope Flap -->
+  <path d="M250 200 L400 300 L550 200" stroke="#065885" stroke-width="8" fill="none" />
+  
+  <!-- Message Lines -->
+  <rect x="300" y="250" width="200" height="8" rx="4" fill="#065885" />
+  <rect x="300" y="280" width="150" height="8" rx="4" fill="#065885" />
+  <rect x="300" y="310" width="180" height="8" rx="4" fill="#065885" />
+  
+  <!-- Decorative Elements -->
+  <circle cx="650" cy="150" r="20" fill="#033d54" opacity="0.1" />
+  <circle cx="150" cy="450" r="30" fill="#033d54" opacity="0.1" />
+  <circle cx="700" cy="400" r="25" fill="#033d54" opacity="0.1" />
+  
+  <!-- Abstract Lines -->
+  <path d="M100 100 Q 150 150, 200 100" stroke="#033d54" stroke-width="3" fill="none" opacity="0.2" />
+  <path d="M600 500 Q 650 450, 700 500" stroke="#033d54" stroke-width="3" fill="none" opacity="0.2" />
+</svg> 

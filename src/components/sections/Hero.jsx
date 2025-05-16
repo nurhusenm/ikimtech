@@ -36,7 +36,7 @@ const Hero = () => {
   ];
 
   return (
-    <div className="relative bg-[#033d54] overflow-visible mt-[90px] min-h-screen rounded-b-[100px] ">
+    <div className="relative bg-[#033d54] overflow-visible mt-[90px] min-h-screen rounded-b-[100px] " id="hero">
       {/* Add this wrapper div */}
       <div className="overflow-x-hidden w-full ">
         {/* Enhanced gradient background */}
