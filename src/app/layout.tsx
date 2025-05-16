@@ -1,8 +1,5 @@
 // app/layout.jsx
-import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
-import Loading from "./loading";
-import { Suspense } from "react";
 import Navbar from "@/components/layout/Navbar";
 import Head from "next/head";
 import HydrationLoader from "@/components/HydrationLoader";
@@ -47,8 +44,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
           {children}
         </HydrationLoader>
       </body>
-        {/* <Navbar />
-        {children} */}
+        
       
     </html>
   );

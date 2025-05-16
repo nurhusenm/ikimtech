@@ -78,7 +78,7 @@ const ContactSection = () => {
         });
       }
     } catch (error) {
-      toast.error('Failed to send message. Please try again.');
+      toast.error('Failed to send message. Please try again.' + error);
     } finally {
       setIsLoading(false);
     }

@@ -3,7 +3,6 @@
 import { motion } from "framer-motion";
 import { FaCode, FaMobile, FaPalette, FaServer, FaPrint, FaCube } from 'react-icons/fa';
 import { MdDesignServices, MdVideoSettings } from 'react-icons/md';
-import { BiSolidConsole } from 'react-icons/bi';
 import { BsGraphUp } from 'react-icons/bs';
 
 const services = [
